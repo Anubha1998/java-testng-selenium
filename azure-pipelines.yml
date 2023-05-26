@@ -15,7 +15,7 @@ steps:
     inputs:
       connection: service1
   - script: |
-      mvn clean install
+      mvn clean install -DskipTests
 
   - script: "mvn test -D suite=single.xml"
     displayName: "Command Line Script"
